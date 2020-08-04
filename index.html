@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <title>Contrée</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="parametres">
+            <div class="tapis">
+                <table class="tapis">
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="text" id="nord" value="Olivier">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="ouest" value="Marion">
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" id="est" value="Paul">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="text" id="sud" value="Katja">
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-container" id="form-container">
+                <h1>Paramètres</h1>
+                <h2>Points de l'équipe qui prend :</h2>
+                <p>
+                    <input type="radio" id="attaqueTotal" name="attaque" value="total" class="check-with-label">
+                    <label for="attaqueTotal" class="label-for-check">L'équipe qui prend marque les points annoncés plus les points faits.</label>
+                </p>
+                <p>
+                    <input type="radio" id="attaqueAnnonce" name="attaque" value="annonce" class="check-with-label" checked>
+                    <label for="attaqueAnnonce" class="label-for-check">L'équipe qui prend ne marque que les points annoncés.</label>
+                </p>
+                <p>
+                    <input type="radio" id="attaqueFaits" name="attaque" value="faits" class="check-with-label">
+                    <label for="attaqueFaits" class="label-for-check">L'équipe qui prend ne marque que les points faits.</label>
+                </p>
+                <h2>Points de la défense :</h2>
+                <p>
+                    <input type="radio" id="defenseSans" name="defense" value="sans" class="check-with-label">
+                    <label for="defenseSans" class="label-for-check">La défense ne marque pas de points.</label>
+                </p>
+                <p>
+                    <input type="radio" id="defenseAvec" name="defense" value="avec" class="check-with-label" checked>
+                    <label for="defenseAvec" class="label-for-check">La défense marque ses points faits.</label>
+                </p>
+                <h2>Belote :</h2>
+                <p>
+                    <input type="radio" id="beloteTotal" name="belote" value="total" class="check-with-label">
+                    <label for="beloteTotal" class="label-for-check">La belote compte dans les points pour remplir le contrat.</label>
+                </p>
+                <p>
+                    <input type="radio" id="beloteBonus" name="belote" value="bonus" class="check-with-label" checked>
+                    <label for="beloteBonus" class="label-for-check">La belote rapporte un bonus de points si le contrat est rempli.</label>
+                </p>
+                <p>
+                    <input type="radio" id="beloteSans" name="belote" value="sans" class="check-with-label">
+                    <label for="beloteSans" class="label-for-check">Sans</label>
+                </p>
+                <h2>Sans atout :</h2>
+                <p>
+                    <input type="radio" id="sansAtoutAvec" name="sansAtout" value="avec" class="check-with-label">
+                    <label for="sansAtoutAvec" class="label-for-check">Avec</label>
+                </p>
+                <p>
+                    <input type="radio" id="sansAtoutSans" name="sansAtout" value="sans" class="check-with-label" checked>
+                    <label for="sansAtoutSans" class="label-for-check">Sans</label>
+                </p>
+                <h2>Tout atout :</h2>
+                <p>
+                    <input type="radio" id="toutAtoutAvec" name="toutAtout" value="avec" class="check-with-label">
+                    <label for="toutAtoutAvec" class="label-for-check">Avec</label>
+                </p>
+                <p>
+                    <input type="radio" id="toutAtoutSans" name="toutAtout" value="sans" class="check-with-label" checked>
+                    <label for="toutAtoutSans" class="label-for-check">Sans</label>
+                </p>
+                <div class="center">
+                    <button id="valider">Valider</button>
+                </div>
+            </div>
+        </div>
+        <div class="points">
+            <div class="table-points">
+                <table class="points">
+                    <tr><th class="nord"></th><th class="ouest"></th></tr>
+                    <tr><th class="sud"></th><th class="est"></th></tr>
+                </table>
+            </div>
+            <div class="infos">
+                <h3 id="pDonneur"></h3>
+                <button id="annonce">Annoncer</button>
+                <h3 id="pAnnonce"></h3>
+                <button id="belote">Belote</button>
+                <h3 id="pBelote"></h3>
+                <button id="compter">Compter les points</button>
+            </div>
+        </div>
+        <div id="modal-annonce" class="modal-container">
+            <div class="modal">
+                <h3>Qui ?</h3>
+                <button id="btnNS"></button>
+                <button id="btnEO"></button>
+                <h3>Combien ?</h3>
+                <button id="80" class="combien">80</button>
+                <button id="90" class="combien">90</button>
+                <button id="100" class="combien">100</button>
+                <button id="110" class="combien">110</button>
+                <button id="120" class="combien">120</button>
+                <button id="130" class="combien">130</button>
+                <button id="140" class="combien">140</button>
+                <button id="150" class="combien">150</button>
+                <button id="160" class="combien">160</button>
+                <button id="capot" class="combien">capot</button>
+                <h3>A quelle couleur ?</h3>
+                <button id="pique" class="couleur">♠</button>
+                <button id="carot" class="couleur">♦</button>
+                <button id="coeur" class="couleur">♥</button>
+                <button id="trefle" class="couleur">♣</button>
+                <h3>Contrée ?</h3>
+                <button id="noncontree">Non</button>
+                <br/>
+                <button id="contree">Contrée</button>
+                <br/>
+                <button id="surcontree">Surcontrée</button>
+                <h3>Valider</h3>
+                <button id="validerAnnonce">Valider</button>
+                <br/>
+                <button id="passer">Tout le monde passe...</button>
+            </div>
+        </div>
+        <div id="modal-belote" class="modal-container">
+            <div class="modal">
+                <h3>Qui annonce Belote ?</h3>
+                <button id="beloteNS"></button>
+                <br/>
+                <button id="beloteEO"></button>
+                <br/>
+                <button id="beloteAnnuler">Annuler</button>
+            </div>
+        </div>
+        <div id="modal-compter" class="modal-container">
+            <div class="modal">
+                <h3>C'est l'heure des comptes !</h3>
+                <p>
+                    <label id="labelNS" for="compterNS" class="compter"></label>
+                    <input type="number" id="compterNS" name="compterNS" class="compter" min="0" max="182"/>
+                </p>
+                <p>
+                    <label id="labelEO" for="compterEO" class="compter"></label>
+                    <input type="number" id="compterEO" name="compterEO" class="compter" min="0" max="182"/>
+                </p>
+                <button id="compterValider">Valider</button>
+                <br/>
+                <button id="compterAnnuler">Annuler</button>
+            </div>
+        </div>
+        <div id="modal-score" class="modal-container">
+            <div class="modal">
+                <h3 id=scoreNS></h3>
+                <h3 id=scoreEO></h3>
+                <button id="nouvelleDonne">Nouvelle donne.</button>
+            </div>
+        </div>
+    	<script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,197 @@
+html, body {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.parametres {
+    margin: auto;
+    max-width: 1100px;
+}
+
+div.points {
+    margin: auto;
+    max-width: 1100px;
+}
+
+div.form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 40px;
+    max-width: 680px;
+    margin: 10px auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.tapis {
+    border-radius: 5px;
+    background-color: #00561B;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+}
+
+table.tapis{
+    width: 300px;
+    height: 300px;
+}
+
+.center{
+    text-align: center;
+}
+
+button {
+    height: 50px;
+    width: 260px;
+    background-color: #ea0e0e;
+    display: inline-block;
+    border: 1px solid black;
+    color: white;
+    font-size: 16pt;
+    margin: 10px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+input{
+    margin-left: 20px;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.label-for-check{
+    font-weight: bold;
+}
+
+.check-with-label:checked + .label-for-check {
+    color: red;
+}
+
+div.table-points {
+    margin: 10px auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.infos {
+    margin: 10px auto;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table.points {
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+}
+
+td.points {
+    border: 1px solid;
+}
+
+th {
+    border: black 1px solid;
+    width: 150px;
+}
+
+th.nord {
+    border-bottom: none;
+    color: white;
+    background-color: #333333;
+}
+
+th.sud {
+    border-top: none;
+    color: white;
+    background-color: #333333;
+}
+
+th.ouest {
+    border-bottom: none;
+    color: white;
+    background-color: #ea0e0e;
+}
+
+th.est {
+    border-top: none;
+    color: white;
+    background-color: #ea0e0e;
+}
+
+h3 {
+    margin: 0
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+    position: relative;
+    width: 95%;
+    max-width: 700px;
+    min-height: 415px;
+    margin: 10px auto;
+    padding-bottom: 15px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0.25em;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    transition: .4s ease-out;
+    color: rgba(6, 49, 68, 0.9);
+    text-align: center
+}
+
+button.combien {
+    width: 100px;
+}
+
+button.couleur {
+    width: 50px;
+}
+
+.modal button {
+    background-color: #333333;
+}
+
+label.compter {
+    font-weight: bold;
+}
+
+input[type=number].compter {
+    width: 150px;
+    padding: 12px 2px 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
